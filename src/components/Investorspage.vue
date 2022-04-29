@@ -11,7 +11,7 @@
         <div class="col-12">
           <div class="title">
             <img src="../assets/images/investors/group.svg">
-            <router-link to="/testdocument" exact><a class="router_link_class"> MassChallange application
+            <router-link to="/testdocument" exact><a class="router_link_class"> MassChallenge application
                 2022</a>
             </router-link>
           </div>
