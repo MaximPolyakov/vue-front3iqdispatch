@@ -9,7 +9,7 @@ import Blogpage from '@/components/Blogpage'
 import ScheduleDemo from '@/components/ScheduleDemo'
 import Investorspage from '@/components/Investorspage'
 import InvestorsDocuments from '@/components/InvestorsDocuments'
-import Article1 from '@/components/article1'
+import Article1 from '@/components/Article1'
 import InvestorsPresentations from '@/components/InvestorsPresentations'
 import AboutUs from '@/components/AboutUs'
 
