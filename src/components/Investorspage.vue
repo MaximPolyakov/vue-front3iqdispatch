@@ -11,18 +11,21 @@
         <div class="col-12">
           <div class="title">
             <img src="../assets/images/investors/group.svg">
-            <router-link to="/testdocument" exact><a class="router_link_class"> MassChallenge application
-                2022</a>
+            <router-link to="/investorsdocuments" exact><a class="router_link_class"> Founders Intro</a>
             </router-link>
           </div>
-          <div class="video-container" style="justify-content:flex-start">
-            <a href=""><img src="../assets/images/investors/pdf.svg" alt=""></a>
-            <a href="/static/test.pdf"
-              style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a>
+          <div class="video-container">
+            <div class="video">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/xQfaaFb7A7s"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
           </div>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
         </div>
+
         <div class="col-12">
           <div class="title">
             <img src="../assets/images/investors/group.svg">
@@ -39,6 +42,21 @@
           </div>
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
+        </div>
+        <div class="col-12">
+          <div class="title">
+            <img src="../assets/images/investors/group.svg">
+            <router-link to="/testdocument" exact><a class="router_link_class"> MassChallenge application
+                2022</a>
+            </router-link>
+          </div>
+          <div class="video-container" style="justify-content:flex-start">
+            <a href=""><img src="../assets/images/investors/pdf.svg" alt=""></a>
+            <a href="/static/test.pdf"
+              style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a>
+          </div>
+          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
         </div>
 
         <!-- <div class="col-6"></div>
@@ -153,7 +171,7 @@
     components: {
       // MainNavbar,
       // MainFooter,
-      // VueSlickCarousel 
+      // VueSlickCarousel
     },
     mounted() {
       let h1 = document.querySelector('#main-title');
