@@ -43,7 +43,7 @@
           <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
         </div>
-        <div class="col-12">
+        <!-- <div class="col-12">
           <div class="title">
             <img src="../assets/images/investors/group.svg">
             <router-link to="/testdocument" exact><a class="router_link_class"> MassChallenge application
@@ -55,9 +55,9 @@
             <a href="/static/test.pdf"
               style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a>
           </div>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
-        </div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        </div> -->
 
         <!-- <div class="col-6"></div>
           <div class="documents-1-column col-6">

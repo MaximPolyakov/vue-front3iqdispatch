@@ -497,6 +497,7 @@
     .cols3 {
       background-image: url("../assets/images/home/bg_mobile_3.jpg");
       background-position-y: 75%;
+
     }
 
     .carousel-card {
@@ -622,8 +623,13 @@
       margin-top: -10%;
     }
 
+    .c1_title>div {
+      margin-top: 0;
+    }
+
     .cols1 .c1_title {
       width: 100%;
+      margin: 0;
     }
 
     .cols2>.c1_title {
