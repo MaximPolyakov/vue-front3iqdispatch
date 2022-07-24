@@ -50,7 +50,7 @@
           <a class="router_link_class"> MassChallenge application
             2022</a>
           <div class="require_pass">
-            To view this document, please inquire about passcode by contacting as at <a
+            To view this document, please inquire about passcode by contacting us at <a
               href="mailto:admin@iqhaulers.com">admin@iqhaulers.com</a>
           </div>
           <!-- <router-link to="/" exact><a class="router_link_class"> MassChallenge application
