@@ -8,7 +8,7 @@
         <img src="../assets/images/investors/title-img.jpg" style="width: 100%; ">
       </div> -->
       <div class="block">
-        <div class="col-12">
+        <!-- <div class="col-12">
           <div class="title">
             <img src="../assets/images/investors/group.svg">
             <router-link to="/investorsdocuments" exact><a class="router_link_class"> Founders Intro</a>
@@ -21,45 +21,54 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen></iframe>
             </div>
-          </div>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          </div> -->
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
-        </div>
+      </div>
 
-        <div class="col-12">
-          <div class="title">
-            <img src="../assets/images/investors/group.svg">
-            <router-link to="/investorsdocuments" exact><a class="router_link_class"> MVP Demo (60 sec)</a>
-            </router-link>
+      <div class="col-12">
+        <div class="title">
+          <img src="../assets/images/investors/group.svg">
+          <a class="router_link_class"> MVP Demo (60 sec)</a>
+          <!-- <router-link to="/investorsdocuments" exact><a class="router_link_class"> MVP Demo (60 sec)</a>
+          </router-link> -->
+        </div>
+        <div class="video-container">
+          <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yPXNs8l5WWA"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
           </div>
-          <div class="video-container">
-            <div class="video">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/yPXNs8l5WWA"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
-            </div>
-          </div>
-          <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
+      </div>
+      <div class="col-12">
+        <div class="title">
+          <img src="../assets/images/investors/group.svg">
+          <a class="router_link_class"> MassChallenge application
+            2022</a>
+          <div class="require_pass">
+            To view this document, please inquire about passcode by contacting as at <a
+              href="mailto:admin@iqhaulers.com">admin@iqhaulers.com</a>
+          </div>
+          <!-- <router-link to="/" exact><a class="router_link_class"> MassChallenge application
+              2022</a>
+          </router-link> -->
         </div>
-        <!-- <div class="col-12">
-          <div class="title">
-            <img src="../assets/images/investors/group.svg">
-            <router-link to="/testdocument" exact><a class="router_link_class"> MassChallenge application
-                2022</a>
-            </router-link>
-          </div>
-          <div class="video-container" style="justify-content:flex-start">
-            <a href=""><img src="../assets/images/investors/pdf.svg" alt=""></a>
-            <a href="/static/test.pdf"
-              style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a>
-          </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-        </div> -->
+        <div class="video-container" id="masschallenge" style="justify-content:flex-start">
+          <a href=""><img src="../assets/images/investors/pdf.svg" alt=""></a>
+          <a href="https://acrobat.adobe.com/link/track?uri=urn%3Aaaid%3Ascds%3AUS%3A1ddf6b40-4a3e-4b88-b959-826aa8a23d0a&viewer%21megaVerb=group-discover"
+            style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a>
+          <!-- <a href="/static/test.pdf"
+            style="color: #160C3A; margin-left: 8px;">Application_For_IQHaulers_Inc_2022_US_Early_Stage_Application_Cycle.pdf</a> -->
+        </div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p> -->
+      </div>
 
-        <!-- <div class="col-6"></div>
+      <!-- <div class="col-6"></div>
           <div class="documents-1-column col-6">
             <div class="document">
               <a href="../assets/documents/test.pdf" download><img src="../assets/images/investors/download.svg"
@@ -79,10 +88,10 @@
             </div>
           </div> -->
 
-      </div>
+    </div>
 
 
-      <!-- <div class="block">
+    <!-- <div class="block">
         <div class="row">
           <div class="col-6">
             <div class="title">
@@ -147,7 +156,7 @@
           </div>
         </div>
       </div> -->
-    </div>
+  </div>
   </div>
 </template>
 <script>
@@ -277,6 +286,20 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+
+  .require_pass {
+    margin-top: 8px;
+    font-size: 16px;
+  }
+
+  .require_pass>a {
+    font-size: 16px;
+    color: #160C3A;
+  }
+
+  #masschallenge {
+    margin-top: 8px;
   }
 
   @media(max-width: 1100px) {
