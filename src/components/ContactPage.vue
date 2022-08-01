@@ -3,7 +3,7 @@
   <div class="contact">
     <!-- <main-navbar  :isSelected=5 /> -->
     <div class="contact_header">
-      <form>
+      <form ref="form" @submit.prevent="sendEmail">
         <div>Sales business hours 8AM-5PM CST Monday-Friday Contact us directly at <span>(224) 354-1613</span> or
           complete the form below and a IQHaulers
           representative will be in touch with you shortly.</div>
@@ -38,7 +38,7 @@
           </label>
         </div>
         <div class="omrs-input-group">
-          <input type="submit" class="submit_btn" />
+          <input type="submit" class="submit_btn" value="Send">
         </div>
       </form>
     </div>
@@ -54,11 +54,11 @@
     name: 'Contactpage',
     data() {
       return {
-        name: '',
-        company: '',
-        usdot: '',
-        phone: '',
-        email: ''
+        name: 'Name',
+        company: 'Company',
+        usdot: 'USDOT',
+        phone: 'Phone',
+        email: 'email@gmail.com'
       }
     },
     components: {
@@ -72,19 +72,9 @@
       '$route': 'repaint'
     },
     methods: {
-      repaint() {
-        let h1 = document.querySelector('#main-title');
-        h1.textContent = 'Contacts text';
-        let span = document.querySelector('#main-subtitle');
-        span.innerHTML = '';
-        let head = document.querySelector('#app-header');
-        head.classList.add('blog-background1', 'header394');
-        let text = document.querySelector('.home-invisible');
-        text.classList.remove('dnone_ohidden');
-      },
-      sendEmail(e) {
+      sendEmail() {
         try {
-          emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', e.target, 'kzje1mOzOaxKTx4la', {
+          emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', this.$refs.form, 'kzje1mOzOaxKTx4la', {
             name: this.name,
             company: this.company,
             usdot: this.usdot,
@@ -100,7 +90,17 @@
         this.usdot = ''
         this.phone = ''
         this.email = ''
-      }
+      },
+      repaint() {
+        let h1 = document.querySelector('#main-title');
+        h1.textContent = 'Contacts text';
+        let span = document.querySelector('#main-subtitle');
+        span.innerHTML = '';
+        let head = document.querySelector('#app-header');
+        head.classList.add('blog-background1', 'header394');
+        let text = document.querySelector('.home-invisible');
+        text.classList.remove('dnone_ohidden');
+      },
     }
   }
 </script>
