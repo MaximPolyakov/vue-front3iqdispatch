@@ -54,11 +54,11 @@
     name: 'Contactpage',
     data() {
       return {
-        name: 'Name',
-        company: 'Company',
-        usdot: 'USDOT',
-        phone: 'Phone',
-        email: 'email@gmail.com'
+        name: '',
+        company: '',
+        usdot: '',
+        phone: '',
+        email: ''
       }
     },
     components: {
