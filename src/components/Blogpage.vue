@@ -9,6 +9,31 @@
         <span style="font-size: 42px; vertical-align: middle;">August 22, 2021</span>
       </div> -->
       <div class="card">
+        <router-link to="/article3" exact>
+          <img src="../assets/images/blog/article3/article3.jpg" alt="" style="display: block; max-width: 100%">
+          <div class="text-block">
+            <p>Стратегии адаптации овнеров к низким
+              рейтам в кризисном 2022 году</p>
+            <!-- <p class="grey-50">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit non deserunt.
+            </p> -->
+            <p class="grey-50">2022 год для овнеров – время контроля расходов: посчитать,
+              сколько гросса съедает толл, какие мили лучше брать, ведь много $
+              уходит на ремонт и техобслуживание траков, дизель
+              <br>
+              ...
+              <br>
+            </p>
+            <p class="grey-75">
+              <img src="../assets/images/blog/calendar.svg" style="vertical-align: middle;"><span
+                style="vertical-align: middle;">August 3, 2022</span>
+              <span>&nbsp;&nbsp;&nbsp;</span>
+              <img src="../assets/images/blog/clock.svg" style="vertical-align: middle;"><span
+                style="vertical-align: middle;">4 min read</span>
+            </p>
+          </div>
+        </router-link>
+      </div>
+      <div class="card">
         <router-link to="/article2" exact>
           <img src="../assets/images/blog/article2/article2.jpg" alt="" style="display: block; max-width: 100%">
           <div class="text-block">

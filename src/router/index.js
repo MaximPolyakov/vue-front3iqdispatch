@@ -14,6 +14,7 @@ import InvestorsPresentations from '@/components/InvestorsPresentations'
 import AboutUs from '@/components/AboutUs'
 import OfferPage from '@/components/OfferPage'
 import Article2 from '@/components/Article2'
+import Article3 from '@/components/Article3'
 
 
 /* eslint-disable */
@@ -98,7 +99,12 @@ export default new VueRouter({
       path: '/article2',
       name: 'Article2',
       component: Article2
-  },
+    },
+    {
+      path: '/article3',
+      name: 'Article3',
+      component: Article3
+    },
     ],
     scrollBehavior (to, from, savedPosition) {
         return { x: 0, y: 0 }
