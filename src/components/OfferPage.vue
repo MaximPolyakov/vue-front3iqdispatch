@@ -14,7 +14,14 @@
         </div>
       </div>
       <form ref="form" @submit.prevent="sendEmail">
-        <div>Contact us at <span>(224) 228-4508</span> or complete the form below to learn more about our services and
+        <div class="pc-number">Contact us at <span>(224) 228-4508</span> or complete the form below to learn more
+          about our
+          services and
+          Special Offer.</div>
+        <div class="mobile-number">Contact us at <br> <span>(224) 228-4508</span> <br> or complete the form below to
+          learn more
+          about our
+          services and
           Special Offer.</div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
@@ -154,11 +161,15 @@
     order: 1;
   }
 
-  .contact_header form>div {
+  .contact_header form>div.pc-number {
     font-size: 28px;
     line-height: 40px;
-    width: 90%;
+    width: 80%;
     text-align: center;
+  }
+
+  .contact_header form>div.mobile-number {
+    display: none;
   }
 
   .contact_header form>div>span {
@@ -245,6 +256,12 @@
 
     .contact_header form>div {
       text-align: center;
+    }
+
+
+    .contact_header form>div>span {
+      font-weight: bold;
+      color: #b11720;
     }
 
     .contact_header form {
@@ -347,8 +364,22 @@
     }
 
 
-    .contact_header form>div {
+    .contact_header form>div.mobile-number {
+      display: block;
+      font-size: 28px;
+      line-height: 40px;
+      width: 100%;
       text-align: center;
+    }
+
+    .contact_header form>div.pc-number {
+      display: none;
+    }
+
+    .contact_header form>div>span {
+      font-size: 32px;
+      font-weight: bold;
+      color: #b11720;
     }
 
     .contact_header form {
