@@ -13,6 +13,7 @@ import Article1 from '@/components/Article1'
 import InvestorsPresentations from '@/components/InvestorsPresentations'
 import AboutUs from '@/components/AboutUs'
 import OfferPage from '@/components/OfferPage'
+import Article2 from '@/components/Article2'
 
 
 /* eslint-disable */
@@ -93,6 +94,11 @@ export default new VueRouter({
         name: 'OfferPage',
         component: OfferPage
     },
+    {
+      path: '/article2',
+      name: 'Article2',
+      component: Article2
+  },
     ],
     scrollBehavior (to, from, savedPosition) {
         return { x: 0, y: 0 }
