@@ -36,11 +36,11 @@
                   <div class="col-10">
                     <div class="footer-link">
                       <a href="#">Dispatcher Performance</a>
-                      <a href="#">About</a>
+                      <a href="/offer">Special Offer</a>
                       <!-- <a href="#">Blog</a> -->
                       <!-- <a href="#">Pricing</a> -->
                       <a href="#">Technical Support</a>
-                      <a href="#">Contacts</a>
+                      <a href="/contact_us">Contacts</a>
                     </div>
                   </div>
                 </div>
@@ -66,10 +66,10 @@
       <!-- <div class="col-4">
         <div class="row">
           <div class="col-4">
-            
+
           </div>
           <div class="col-4">
-            
+
           </div>
         </div>
       </div>

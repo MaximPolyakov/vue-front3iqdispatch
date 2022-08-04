@@ -28,6 +28,11 @@
             </router-link>
           </li>
           <li class="nav-item" @click="mobileNavShow = false">
+            <router-link to="/offer" class="nav-link" :class="{'active': isSelected==10?true:false}" exact>Special
+              Offer
+            </router-link>
+          </li>
+          <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/scheduledemo" class="nav-link" :class="{'active': isSelected==2?true:false}" style="width: 100%;
             text-align: center;" exact>Schedule a Demo</router-link>
           </li>

@@ -12,6 +12,7 @@ import InvestorsDocuments from '@/components/InvestorsDocuments'
 import Article1 from '@/components/Article1'
 import InvestorsPresentations from '@/components/InvestorsPresentations'
 import AboutUs from '@/components/AboutUs'
+import OfferPage from '@/components/OfferPage'
 
 
 /* eslint-disable */
@@ -86,6 +87,11 @@ export default new VueRouter({
         path: '/testdocument',
         name: 'pdfViewer',
         component: AboutUs
+    },
+    {
+        path: '/offer',
+        name: 'OfferPage',
+        component: OfferPage
     },
     ],
     scrollBehavior (to, from, savedPosition) {

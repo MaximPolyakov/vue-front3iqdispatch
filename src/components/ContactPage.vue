@@ -40,6 +40,12 @@
         <div class="omrs-input-group">
           <input type="submit" class="submit_btn" value="Send">
         </div>
+        <div class="popup-container popup-inactive">
+          <div class="popup">
+            <div class="popup-text">✔️Your message had been sent.</div>
+            <button class="popup-ok" @click="togglePopup()">Close</button>
+          </div>
+        </div>
       </form>
     </div>
     <!-- <main-footer /> -->
@@ -80,7 +86,9 @@
             usdot: this.usdot,
             phone: this.phone,
             email: this.email
-          })
+          });
+          this.togglePopup();
+
         } catch (error) {
           console.log({ error });
         }
@@ -101,6 +109,10 @@
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden');
       },
+      togglePopup() {
+        let popup = document.querySelector('.popup-container');
+        popup.classList.toggle('popup-inactive');
+      }
     }
   }
 </script>
@@ -136,6 +148,41 @@
   .contact_header form>div>span {
     font-weight: bold;
     color: #b11720;
+  }
+
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .popup {
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #fff;
+    border: 1px solid #121212;
+    font-size: 24px;
+    padding: 2% 2%;
+    text-align: center;
+  }
+
+  .popup-ok {
+    height: 20%;
+    width: 30%;
+    font-size: 18px;
+    padding: 1% 3%;
+  }
+
+  .popup-container.popup-inactive {
+    display: none;
   }
 
   @media only screen and (max-width: 1100px) {
