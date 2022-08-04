@@ -31,14 +31,14 @@
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="company" v-model="company" required>
-            <span class="omrs-input-label">Company</span>
+            <input type="text" name="company" v-model="company">
+            <span class="omrs-input-label not-required">Company</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="usdot" v-model="usdot" required>
-            <span class="omrs-input-label">USDOT or MC</span>
+            <input type="text" name="usdot" v-model="usdot">
+            <span class="omrs-input-label not-required">USDOT or MC</span>
           </label>
         </div>
         <div class="omrs-input-group">
@@ -249,6 +249,11 @@
     display: none;
   }
 
+  /* .not-required {
+    font-size: 18px;
+    margin-top: 10px;
+  } */
+
   @media only screen and (max-width: 1100px) {
     .contact_header {
       height: 100%;
@@ -370,8 +375,8 @@
 
     .contact_header form>div.mobile-number {
       display: block;
-      font-size: 28px;
-      line-height: 40px;
+      font-size: 22px;
+      line-height: 34px;
       width: 100%;
       text-align: center;
     }
@@ -381,7 +386,7 @@
     }
 
     .contact_header form>div>span {
-      font-size: 32px;
+      font-size: 24px;
       font-weight: bold;
       color: #b11720;
     }

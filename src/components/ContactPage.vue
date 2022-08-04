@@ -4,7 +4,13 @@
     <!-- <main-navbar  :isSelected=5 /> -->
     <div class="contact_header">
       <form ref="form" @submit.prevent="sendEmail">
-        <div>Sales business hours 8AM-5PM CST Monday-Friday Contact us directly at <span> (224) 228-4509</span> or
+        <div class="pc-number">Sales business hours 8AM-5PM CST Monday-Friday Contact us directly at <span> (224)
+            228-4509</span> or
+          complete the form below and a IQHaulers
+          representative will be in touch with you shortly.</div>
+        <div class="mobile-number">Sales business hours 8AM-5PM CST Monday-Friday Contact us directly at <br> <span>
+            (224)
+            228-4509</span> or
           complete the form below and a IQHaulers
           representative will be in touch with you shortly.</div>
         <div class="omrs-input-group">
@@ -16,13 +22,13 @@
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
             <input type="text" name="company" v-model="company" required>
-            <span class="omrs-input-label">Company</span>
+            <span class="omrs-input-label company">Company</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
             <input type="text" name="usdot" v-model="usdot" required>
-            <span class="omrs-input-label">USDOT or MC</span>
+            <span class="omrs-input-label usdot">USDOT or MC</span>
           </label>
         </div>
         <div class="omrs-input-group">
@@ -80,13 +86,17 @@
     methods: {
       sendEmail() {
         try {
-          emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', this.$refs.form, 'kzje1mOzOaxKTx4la', {
-            name: this.name,
-            company: this.company,
-            usdot: this.usdot,
-            phone: this.phone,
-            email: this.email
-          });
+          // let company = document.querySelector('.company');
+          // company.removeAttribute("required");
+          // let usdot = document.querySelector('.usdot');
+          // company.removeAttribute("required");
+          // emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', this.$refs.form, 'kzje1mOzOaxKTx4la', {
+          //   name: this.name,
+          //   company: this.company,
+          //   usdot: this.usdot,
+          //   phone: this.phone,
+          //   email: this.email
+          // });
           this.togglePopup();
 
         } catch (error) {
@@ -136,19 +146,25 @@
 
   .contact_header form {
     width: 40%;
+    margin-top: 2%;
     margin-left: 10%;
     text-align: left;
   }
 
-  .contact_header form>div {
+  .contact_header form>div.pc-number {
     font-size: 25px;
     line-height: 40px;
+  }
+
+  .contact_header form>div.mobile-number {
+    display: none;
   }
 
   .contact_header form>div>span {
     font-weight: bold;
     color: #b11720;
   }
+
 
   .popup-container {
     display: flex;
@@ -185,6 +201,11 @@
     display: none;
   }
 
+  /* .not-required {
+    font-size: 18px;
+    margin-top: 10px;
+  } */
+
   @media only screen and (max-width: 1100px) {
     .contact_header {
       height: 100vh;
@@ -213,6 +234,22 @@
       flex-direction: column;
       display: flex;
       justify-content: space-around;
+    }
+
+    .contact_header form>div.mobile-number {
+      display: block;
+      font-size: 22px;
+      line-height: 40px;
+    }
+
+    .contact_header form>div.pc-number {
+      display: none;
+    }
+
+    .contact_header form>div>span {
+      font-size: 24px;
+      font-weight: bold;
+      color: #b11720;
     }
   }
 </style>
