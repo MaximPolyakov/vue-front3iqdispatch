@@ -25,31 +25,31 @@
           Special Offer.</div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="name" v-model="name" required>
+            <input type="text" name="name" v-model="name" required placeholder=".">
             <span class="omrs-input-label">First name and Last name</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="company" v-model="company">
+            <input type="text" name="company" v-model="company" placeholder=".">
             <span class="omrs-input-label not-required">Company</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="usdot" v-model="usdot">
+            <input type="text" name="usdot" v-model="usdot" placeholder=".">
             <span class="omrs-input-label not-required">USDOT or MC</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="text" name="phone" v-model="phone" required>
+            <input type="text" name="phone" v-model="phone" required placeholder=".">
             <span class="omrs-input-label">Phone</span>
           </label>
         </div>
         <div class="omrs-input-group">
           <label class="omrs-input-underlined">
-            <input type="email" name="email" v-model="email" required>
+            <input type="email" name="email" v-model="email" required placeholder=".">
             <span class="omrs-input-label">Email</span>
           </label>
         </div>

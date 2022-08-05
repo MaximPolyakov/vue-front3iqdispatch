@@ -331,6 +331,11 @@ div.omrs-input-group {
 }
 
 /* Input*/
+
+.omrs-input-underlined>input::placeholder {
+  color: transparent;
+}
+
 .omrs-input-underlined>input,
 .omrs-input-filled>input {
   border: none;
@@ -367,9 +372,13 @@ div.omrs-input-group {
 }
 
 .omrs-input-underlined>input:focus+.omrs-input-label,
-.omrs-input-underlined>input:valid+.omrs-input-label,
-.omrs-input-filled>input:focus+.omrs-input-label,
-.omrs-input-filled>input:valid+.omrs-input-label {
+/* .omrs-input-underlined>input:not(:placeholder-shown).omrs-input-label, */
+/* .omrs-input-underlined>input:valid+.omrs-input-label, */
+
+
+/* .omrs-input-filled>input:focus+.omrs-input-label, */
+/* .omrs-input-filled>input:valid+.omrs-input-label, */
+.omrs-input-underlined>input:not(:placeholder-shown)+.omrs-input-label {
   top: 0;
   font-size: 0.9375rem;
   margin-bottom: 32px;
