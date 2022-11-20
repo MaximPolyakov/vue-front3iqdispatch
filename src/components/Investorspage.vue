@@ -188,7 +188,7 @@
       let span = document.querySelector('#main-subtitle');
       // span.innerHTML = "Our investors' page featuring our documents, presentations<br>and something else.";
       let head = document.querySelector('#app-header');
-      head.classList.remove('blog-background1', 'aboutus-background1');
+      head.classList.remove('blog-background1', 'aboutus-background1', 'subscription-background');
       head.classList.add('investors-background1', 'header394');
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden');
@@ -203,7 +203,7 @@
         let span = document.querySelector('#main-subtitle');
         // span.innerHTML = "Our investors' page featuring our documents, presentations<br>and something else.";
         let head = document.querySelector('#app-header');
-        head.classList.remove('blog-background1', 'aboutus-background1');
+        head.classList.remove('blog-background1', 'aboutus-background1', 'subscription-background');
         head.classList.add('investors-background1', 'header394');
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden');

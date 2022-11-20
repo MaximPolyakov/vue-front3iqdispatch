@@ -3,40 +3,13 @@
   <div class="blog">
     <!-- <main-navbar  :isSelected=4 /> -->
     <!-- <main-footer /> -->
+    <div class="stripe-wrapper">
+      <stripe-pricing-table class="pricing-table" pricing-table-id="prctbl_1M6FviFR5NOKXB0lOkIBeoxN"
+        publishable-key="pk_live_51M3PXpFR5NOKXB0lMEscvdzT4rRBR8zIxNkWuiqKMKM63Nrm9EAGXGzYvZ43ph0cLVeBdDKdSurd0MNNtStAk1gF00KN2ipprr">
+      </stripe-pricing-table>
+    </div>
     <div class="blog-container">
-      <p>
-        IQHaulers has been built upon one key founding principle and with one clear goal in mind- to improve the
-        professional lives of owner-operator drivers. Having worked as both an owner-operator and a dispatcher our
-        Founding team saw first hand the inefficiencies and unethical environment that owner-operators have to face
-        daily and how these inefficiencies hit profits, cause lost time and ultimately promote unsafe practices. We
-        believe that just because something has been done a certain way for a long time that doesn’t make it right, and
-        by leveraging our deep technical and development knowledge that’s exactly what IQHaulers is changing.
-      </p>
-      <br>
-      <p>
-        IQHaulers had built a proprietary, AI-enabled Dispatch Analytics Platform with a built-in Active Risk Management
-        system. We use data and effective analytic tools to consider the numerous factors that impact load
-        profitability. These factors include everything from traffic conditions, tolls, the type of terrain as well as
-        the weather.
-      </p>
-      <br>
-      <p>
-        We understand that time is a cost just like any other and our Active Risk Management System takes
-        everything into account to assess load profitability thereby enabling optimized dispatching.
-      </p>
-      <br>
-      <p>
-        Instead of being
-        revenue-driven, IQHaulers empowers owner-operators to be profit-driven, to reduce insurance premiums by only
-        paying for insurance on days they drive, and to be safer all at the same time through optimized dispatching.
-      </p>
-      <br>
-      <p>
-        Easy to adopt, IQHaulers fits seamlessly with an owner-operator's existing work pattern and style regardless of
-        their desired working area or trip length. There for you every step of the way, IQHauler dispatchers are
-        incentivized to help drivers optimize their time and maximize their profits by always being on hand to provide
-        support 24 hours a day, every day.
-      </p>
+
     </div>
   </div>
 </template>
@@ -50,7 +23,7 @@
   // import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
   /* eslint-disable */
   export default {
-    name: "about",
+    name: "Subscription1",
     data() {
       return {
         msg: "Welcome to Your Vue.js App",
@@ -65,14 +38,17 @@
     },
     mounted() {
       let h1 = document.querySelector('#main-title');
-      h1.innerHTML = 'About';
+      h1.innerHTML = 'Subscriptions';
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden', 'blog-background');
       let head = document.querySelector('#app-header');
-      head.classList.remove('blog-background1', 'investors-background1', 'subscription-background');
-      head.classList.add('aboutus-background1', 'header394');
+      head.classList.remove('blog-background1', 'investors-background1');
+      head.classList.add('subscription-background', 'header394');
+      const insertScript = document.createElement('script');
+      insertScript.setAttribute('src', 'https://js.stripe.com/v3/pricing-table.js');
+      document.body.appendChild(insertScript);
     },
     watch: {
       '$route': 'repaint'
@@ -80,15 +56,17 @@
     methods: {
       repaint() {
         let h1 = document.querySelector('#main-title');
-        h1.innerHTML = 'About';
+        h1.innerHTML = 'Subscriptions';
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden', 'blog-background');
         let head = document.querySelector('#app-header');
-        head.classList.remove('blog-background1', 'investors-background1', 'subscription-background');
-        head.classList.add('aboutus-background1', 'header394');
-
+        head.classList.remove('blog-background1', 'investors-background1');
+        head.classList.add('subscription-background', 'header394');
+        const insertScript = document.createElement('script');
+        insertScript.setAttribute('src', 'https://js.stripe.com/v3/pricing-table.js');
+        document.body.appendChild(insertScript);
       }
     }
   };
@@ -96,6 +74,11 @@
 <style scoped>
   .blog {
     background-color: #ECEEF2;
+  }
+
+  .stripe-wrapper {
+    margin-top: 40px;
+    /* min-width: 600px; */
   }
 
   .container>h1 {
@@ -112,7 +95,7 @@
 
   .blog-container {
     max-width: 1440px;
-    padding: 40px 96px;
+    padding: 10px 96px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

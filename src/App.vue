@@ -131,6 +131,13 @@
     background-position-y: 79.2%;
   }
 
+  .subscription-background {
+    background-image: url('assets/images/subscription/subscription.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 79.2%;
+  }
+
   .nav_fixed {
     position: fixed;
     left: 0;

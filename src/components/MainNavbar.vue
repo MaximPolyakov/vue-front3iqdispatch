@@ -71,6 +71,10 @@
                   :class="{'active': isSelected==4?true:false}">Investors</a></router-link>
             </li>
             <li class="nav-item">
+              <router-link to="/subscription1" exact><a class="nav-link"
+                  :class="{'active': isSelected==4?true:false}">Subscriptions</a></router-link>
+            </li>
+            <li class="nav-item">
               <router-link to="/contact_us" exact><a class="nav-link"
                   :class="{'active': isSelected==5?true:false}">Contacts</a></router-link>
             </li>
@@ -343,7 +347,13 @@
   }
 
   .nav-item {
-    padding: 5px 3vw;
+    padding: 5px 2.1vw;
+    position: relative;
+  }
+
+  .nav-item:first-child {
+    padding: 5px 2.1vw;
+    padding-left: 1px;
     position: relative;
   }
 
