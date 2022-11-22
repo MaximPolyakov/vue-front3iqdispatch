@@ -78,7 +78,8 @@
 
   .stripe-wrapper {
     margin-top: 40px;
-    /* min-width: 600px; */
+    max-width: 600px;
+    margin: 40px auto 0 auto;
   }
 
   .container>h1 {
