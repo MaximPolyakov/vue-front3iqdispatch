@@ -4,7 +4,7 @@
     <!-- <main-navbar  :isSelected=4 /> -->
     <!-- <main-footer /> -->
     <div class="stripe-wrapper">
-      <stripe-pricing-table class="pricing-table" pricing-table-id="prctbl_1M6FviFR5NOKXB0lOkIBeoxN"
+      <stripe-pricing-table pricing-table-id="prctbl_1M75EiFR5NOKXB0lfnObBPqI"
         publishable-key="pk_live_51M3PXpFR5NOKXB0lMEscvdzT4rRBR8zIxNkWuiqKMKM63Nrm9EAGXGzYvZ43ph0cLVeBdDKdSurd0MNNtStAk1gF00KN2ipprr">
       </stripe-pricing-table>
     </div>
