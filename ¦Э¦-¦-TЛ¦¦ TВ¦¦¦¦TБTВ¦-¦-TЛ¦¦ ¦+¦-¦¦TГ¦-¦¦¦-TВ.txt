@@ -1,1 +1,0 @@
-scp -i ./es2-key-pair.ppk -r ./dist/* ec2-user@18.190.165.126:/var/www/html

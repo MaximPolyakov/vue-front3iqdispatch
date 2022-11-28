@@ -38,7 +38,7 @@
     },
     mounted() {
       let h1 = document.querySelector('#main-title');
-      h1.innerHTML = 'Subscriptions';
+      h1.innerHTML = 'Subscription';
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let text = document.querySelector('.home-invisible');
@@ -56,7 +56,7 @@
     methods: {
       repaint() {
         let h1 = document.querySelector('#main-title');
-        h1.innerHTML = 'Subscriptions';
+        h1.innerHTML = 'Subscription';
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
         let text = document.querySelector('.home-invisible');
