@@ -5,7 +5,7 @@
       <div class="col-4 pc">
         <div class="row">
           <div class="col-12 footer-tt">
-            <img src="../assets/images/footer/logo_iqdispatch_03.png" class="footer_white_logo" />
+            <img src="../assets/images/footer/logo_iqdispatch_03.png" class="footer_white_logo_disp" />
             <p class="footer-desc">Load finder, load profitability estimator, HOS <br> compliant trip planing, route
               analysis, integrated <br> mapping, dispatcher performance benchmarking, <br> and much more</p>
             <p class="footer-desc">PHD Logistics LLC, 332 S Michigan Ave Suite 121-5500, Chicago, IL 60604</p>
@@ -121,8 +121,7 @@
           <div class="col-4">
             <div class="footer-link">
               <!-- <a href="#">Features</a> -->
-              <img src="../assets/images/footer/logo_ispatch_white_transparente_without.svg"
-                class="footer_white_logo" />
+              <img src="../assets/images/footer/logo_iqdispatch_03.png" class="footer_white_logo_disp" />
               <a href="#">Terms and Conditions</a>
               <a href="#">Privacy Policy</a>
             </div>
@@ -285,6 +284,14 @@
     height: 71px;
     width: 200px;
     margin-left: 0;
+  }
+
+  .footer_white_logo_disp {
+    height: 52px;
+    width: 220px;
+    margin-left: 0;
+    margin-bottom: 10px;
+    /* margin-top: -10px; */
   }
 
   .footer-tt {

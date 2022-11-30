@@ -107,8 +107,8 @@ export default new VueRouter({
       component: Article3
     },
     {
-      path: '/subscription1',
-      name: 'Subscription1',
+      path: '/subscription',
+      name: 'Subscription',
       component: Subscription1
     },
     ],

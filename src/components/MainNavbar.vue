@@ -5,7 +5,7 @@
       :class="{ 'nav-fix': !view.atTopOfPage, 'mobile-nav-show': mobileNavShow, 'back-black': isBlack }">
       <div class="flex-container">
         <a class="navbar-brand" href="/">
-          <img src="../assets/images/navbar/logo.svg">
+          <img src="../assets/images/navbar/logo.png">
         </a>
         <ul class="mobile-nav navbar-nav">
           <li class="nav-item" @click="mobileNavShow = false">
@@ -22,6 +22,10 @@
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/investorspage" class="nav-link" :class="{'active': isSelected==9?true:false}" exact>
               Investors</router-link>
+          </li>
+          <li class="nav-item" @click="mobileNavShow = false">
+            <router-link to="/subscription" class="nav-link" :class="{'active': isSelected==9?true:false}" exact>
+              Subscription</router-link>
           </li>
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/contact_us" class="nav-link" :class="{'active': isSelected==5?true:false}" exact>Contacts
@@ -71,8 +75,8 @@
                   :class="{'active': isSelected==4?true:false}">Investors</a></router-link>
             </li>
             <li class="nav-item">
-              <router-link to="/subscription1" exact><a class="nav-link"
-                  :class="{'active': isSelected==4?true:false}">Subscriptions</a></router-link>
+              <router-link to="/subscription" exact><a class="nav-link"
+                  :class="{'active': isSelected==4?true:false}">Subscription</a></router-link>
             </li>
             <li class="nav-item">
               <router-link to="/contact_us" exact><a class="nav-link"
@@ -248,10 +252,11 @@
     line-height: inherit;
     white-space: nowrap;
     margin-top: 7px;
+    margin-left: -8px;
   }
 
   .navbar-brand>img {
-    width: 185px;
+    width: 220px;
     height: 52px;
     /* width: 153px;
   height: 37px; */
@@ -293,6 +298,7 @@
 
   #navb {
     margin-bottom: 10px;
+    margin-left: -76px;
   }
 
   #nav-search {
@@ -347,13 +353,13 @@
   }
 
   .nav-item {
-    padding: 5px 2.1vw;
+    padding: 5px 2vw;
     position: relative;
   }
 
   .nav-item:first-child {
     padding: 5px 2.1vw;
-    padding-left: 1px;
+    /* padding-left: 1px; */
     position: relative;
   }
 
