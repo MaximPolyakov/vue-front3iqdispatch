@@ -39,7 +39,8 @@
           <div class="col">
             <div class="cols3">
               <div class="c1_title">
-                <h1>IQHaulers introduces low&#8209;cost usage&#8209;based commercial insurance to owner&#8209;operators.
+                <h1>IQDispatch introduces low&#8209;cost usage&#8209;based commercial insurance to
+                  owner&#8209;operators.
                 </h1>
                 <h1>
                   Pay only for the days you run.
