@@ -5,10 +5,10 @@
       <div class="col-4 pc">
         <div class="row">
           <div class="col-12 footer-tt">
-            <img src="../assets/images/footer/logo_ispatch_white_transparente_without.svg" class="footer_white_logo" />
+            <img src="../assets/images/footer/logo_iqdispatch_03.png" class="footer_white_logo" />
             <p class="footer-desc">Load finder, load profitability estimator, HOS <br> compliant trip planing, route
               analysis, integrated <br> mapping, dispatcher performance benchmarking, <br> and much more</p>
-            <p class="footer-desc">IQHaulers Inc, 7643 Gate Parkway, Suite 104-699, Jacksonville, FL 32256</p>
+            <p class="footer-desc">PHD Logistics LLC, 332 S Michigan Ave Suite 121-5500, Chicago, IL 60604</p>
           </div>
         </div>
       </div>
@@ -155,11 +155,11 @@
     </div>
     <div class="copyps">
       <p class="copyright">Terms & Conditions</p>
-      <p class="copyright">© Copyright IQHaulers Inc 2022</p>
+      <p class="copyright">© Copyright PHD Logistics LLC 2022</p>
       <p class="copyright">Privacy Policy</p>
     </div>
     <div class="copyps mobile">
-      <p class="copyright">© Copyright IQHaulers Inc 2022</p>
+      <p class="copyright">© Copyright PHD Logistics LLC 2022</p>
     </div>
   </div>
 </template>
