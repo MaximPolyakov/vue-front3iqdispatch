@@ -256,8 +256,8 @@
   }
 
   .navbar-brand>img {
-    width: 220px;
-    height: 52px;
+    width: 190px;
+    height: 44px;
     /* width: 153px;
   height: 37px; */
     /*margin-left: 30px;*/
