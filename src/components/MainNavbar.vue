@@ -204,6 +204,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 96px;
+    padding-top: 4px;
   }
 
   nav {
@@ -260,7 +261,7 @@
     height: 44px;
     /* width: 153px;
   height: 37px; */
-    /*margin-left: 30px;*/
+    /* margin-left: -4px; */
   }
 
   .navbar-brand>img:first-child {

@@ -287,9 +287,10 @@
   }
 
   .footer_white_logo_disp {
-    height: 52px;
-    width: 220px;
+    height: 50px;
+    width: 216px;
     margin-left: 0;
+    opacity: 0.6;
     margin-bottom: 10px;
     /* margin-top: -10px; */
   }
