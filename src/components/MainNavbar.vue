@@ -11,18 +11,18 @@
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/" class="nav-link" :class="{'active': isSelected==1?true:false}" exact>Home</router-link>
           </li>
-          <li class="nav-item" @click="mobileNavShow = false">
+          <!-- <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/aboutus" class="nav-link" :class="{'active': isSelected==4?true:false}" exact>About Us
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/blogpage" class="nav-link" :class="{'active': isSelected==3?true:false}" exact>Blog
             </router-link>
           </li>
-          <li class="nav-item" @click="mobileNavShow = false">
+          <!-- <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/investorspage" class="nav-link" :class="{'active': isSelected==9?true:false}" exact>
               Investors</router-link>
-          </li>
+          </li> -->
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/subscription" class="nav-link" :class="{'active': isSelected==9?true:false}" exact>
               Subscription</router-link>
@@ -55,11 +55,11 @@
               <router-link to="/" exact><a class="nav-link" :class="{'active': isSelected==1?true:false}">Home</a>
               </router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/aboutus" exact>
                 <a class="nav-link" :class="{'active': isSelected==1?true:false}"> About</a>
               </router-link>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <router-link to="/featurepage"><a class="nav-link" :class="{'active': isSelected==2?true:false}">Features</a></router-link>
             </li> -->
@@ -70,10 +70,10 @@
               <router-link to="/blogpage" exact><a class="nav-link"
                   :class="{'active': isSelected==4?true:false}">Blog</a></router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/investorspage" exact><a class="nav-link"
                   :class="{'active': isSelected==4?true:false}">Investors</a></router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
               <router-link to="/subscription" exact><a class="nav-link"
                   :class="{'active': isSelected==4?true:false}">Subscription</a></router-link>

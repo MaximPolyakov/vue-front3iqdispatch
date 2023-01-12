@@ -8,16 +8,14 @@
           <div class="col">
             <div class="cols1">
               <div class="c1_title">
-                <h1>A virtual trucking company built to benefit owner&#8209;operators through AI&#8209;empowered,
-                  profit&#8209;optimized
-                  dispatching.</h1>
-                <!-- <h1>
-                  Our high-tech solution for optimized dispatching.
-                </h1> -->
-                <!-- <h3>
+                <h1>Revolutionary carrier TMS</h1>
+                <h1>
+                  Designed to increase load profitability <br> and to improve dispatcher productivity
+                </h1>
+                <h3>
                   Improve net profits by up to<br />$500-$1000+ per truck per
                   month
-                </h3> -->
+                </h3>
                 <div>
                   <a class="schedule_btn" href="https://demodesk.com/book/iq-dispatch-team/demo"
                     target="_blank">Schedule a Demo</a>
@@ -28,22 +26,24 @@
           <div class="col">
             <div class="cols2">
               <div class="c1_title">
-                <h1>Intelligent dispatching avoids bad weather and difficult terrain thus reducing accidents, driving
-                  stress, and insurance premiums.</h1>
-                <!-- <h1>
-                  With our Active Risk Management System integrated into Dispatch Decisions Platform.
-                </h1> -->
+                <h1>Avoid dispatching errors!</h1>
+                <h1>
+                  Harness the power of the integrated data sources to make valid booking decisions fast
+                </h1>
+                <h1>
+                  Load more trucks per dispathcer
+                </h1>
               </div>
             </div>
           </div>
           <div class="col">
             <div class="cols3">
               <div class="c1_title">
-                <h1>IQDispatch introduces low&#8209;cost usage&#8209;based commercial insurance to
-                  owner&#8209;operators.
+                <h1>Never miss a good load!
                 </h1>
                 <h1>
-                  Pay only for the days you run.
+                  Automatically perform trip planning and load profitability analysis. Book loads before your
+                  competitors.
                 </h1>
                 <!-- <h1>
                   Never again pay premiums when you do not run for as little as one day.
@@ -469,7 +469,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 82px;
+    margin-top: 42px;
   }
 
   .cols2>.c1_title {
