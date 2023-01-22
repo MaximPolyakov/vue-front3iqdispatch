@@ -41,13 +41,13 @@
             text-align: center;" exact>Schedule a Demo</router-link>
           </li>
           <li class="nav-item" @click="mobileNavShow = false">
-            <router-link to="/loginpage" class="nav-link" :class="{'active': isSelected==7?true:false}" exact>Login
+            <router-link to="/support" class="nav-link" :class="{'active': isSelected==7?true:false}" exact>Tech Support
             </router-link>
           </li>
-          <li class="nav-item" @click="mobileNavShow = false">
+          <!-- <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/loginpage" class="nav-link" :class="{'active': isSelected==8?true:false}" exact>Sign up
             </router-link>
-          </li>
+          </li> -->
         </ul>
         <div class="collapse navbar-collapse" id="navb">
           <ul class="navbar-nav mr-auto web-nav" id="nav-link-main">
@@ -94,8 +94,8 @@
         </button>
         <div class="logins">
           <div>
-            <router-link to="/loginpage" exact><a class="sign_btn">Sign Up</a></router-link>
-            <router-link to="/loginpage" exact><a class="loginbtn">Login</a></router-link>
+            <!-- <router-link to="/loginpage" exact><a class="sign_btn">Sign Up</a></router-link> -->
+            <router-link to="/support" exact><a class="loginbtn">Tech Support</a></router-link>
           </div>
         </div>
       </div>

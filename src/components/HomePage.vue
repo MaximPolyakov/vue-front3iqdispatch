@@ -8,7 +8,8 @@
           <div class="col">
             <div class="cols1">
               <div class="c1_title">
-                <h1>Revolutionary carrier TMS</h1>
+                <h1>Load <span class="red">Finder</span> & <span class="red">Analytics</span> Tools
+                </h1>
                 <h1>
                   Designed to increase load profitability <br> and to improve dispatcher productivity
                 </h1>
@@ -26,28 +27,26 @@
           <div class="col">
             <div class="cols2">
               <div class="c1_title">
-                <h1>Avoid dispatching errors!</h1>
-                <h1>
-                  Harness the power of the integrated data sources to make valid booking decisions fast
+                <h1>Consolidated <span class="red">DAT</span> and <span class="red">Truckstop</span>
+                  loadboards.
                 </h1>
                 <h1>
-                  Load more trucks per dispathcer
+                  Optimized dispatcher workflows.
+                  Book more trucks per dispatcher.
                 </h1>
+
               </div>
             </div>
           </div>
           <div class="col">
             <div class="cols3">
               <div class="c1_title">
-                <h1>Never miss a good load!
+                <h1>Instant load profitability analysis.
                 </h1>
                 <h1>
-                  Automatically perform trip planning and load profitability analysis. Book loads before your
-                  competitors.
+                  With advanced load matching <span class="red">Alerts</span>
+                  book loads before your competitors.
                 </h1>
-                <!-- <h1>
-                  Never again pay premiums when you do not run for as little as one day.
-                </h1> -->
               </div>
             </div>
           </div>
@@ -385,6 +384,10 @@
 
   .col {
     height: 100vh;
+  }
+
+  .red {
+    color: #b11720;
   }
 
   .cols1 {

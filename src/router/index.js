@@ -16,6 +16,8 @@ import OfferPage from '@/components/OfferPage'
 import Article2 from '@/components/Article2'
 import Article3 from '@/components/Article3'
 import Subscription1 from '@/components/Subscription1'
+import Demo from '@/components/Demo'
+import Support from '@/components/Support'
 
 
 /* eslint-disable */
@@ -110,6 +112,16 @@ export default new VueRouter({
       path: '/subscription',
       name: 'Subscription',
       component: Subscription1
+    },
+    {
+      path: '/demo',
+      name: 'Demo',
+      component: Demo
+    },
+    {
+      path: '/support',
+      name: 'Support',
+      component: Support
     },
     ],
     scrollBehavior (to, from, savedPosition) {
