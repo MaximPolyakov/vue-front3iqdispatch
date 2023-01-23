@@ -1,237 +1,297 @@
 /* eslint-disable */
 <template>
-  <div class="blog">
-    <!-- <main-navbar  :isSelected=4 /> -->
-    <!-- <main-footer /> -->
-    <div class="blog-container">
-      <p>
-        IQHaulers has been built upon one key founding principle and with one clear goal in mind- to improve the
-        professional lives of owner-operator drivers. Having worked as both an owner-operator and a dispatcher our
-        Founding team saw first hand the inefficiencies and unethical environment that owner-operators have to face
-        daily and how these inefficiencies hit profits, cause lost time and ultimately promote unsafe practices. We
-        believe that just because something has been done a certain way for a long time that doesn’t make it right, and
-        by leveraging our deep technical and development knowledge that’s exactly what IQHaulers is changing.
-      </p>
-      <br>
-      <p>
-        IQHaulers had built a proprietary, AI-enabled Dispatch Analytics Platform with a built-in Active Risk Management
-        system. We use data and effective analytic tools to consider the numerous factors that impact load
-        profitability. These factors include everything from traffic conditions, tolls, the type of terrain as well as
-        the weather.
-      </p>
-      <br>
-      <p>
-        We understand that time is a cost just like any other and our Active Risk Management System takes
-        everything into account to assess load profitability thereby enabling optimized dispatching.
-      </p>
-      <br>
-      <p>
-        Instead of being
-        revenue-driven, IQHaulers empowers owner-operators to be profit-driven, to reduce insurance premiums by only
-        paying for insurance on days they drive, and to be safer all at the same time through optimized dispatching.
-      </p>
-      <br>
-      <p>
-        Easy to adopt, IQHaulers fits seamlessly with an owner-operator's existing work pattern and style regardless of
-        their desired working area or trip length. There for you every step of the way, IQHauler dispatchers are
-        incentivized to help drivers optimize their time and maximize their profits by always being on hand to provide
-        support 24 hours a day, every day.
-      </p>
+  <div class="contact">
+    <!-- <main-navbar  :isSelected=5 /> -->
+    <div class="contact_header">
+      <form ref="form" @submit.prevent="sendEmail">
+
+        <div class="omrs-input-group">
+          <label for="" class="label-block">Name:</label>
+          <label class="omrs-input-underlined">
+            <input type="text" name="name" v-model="name" required placeholder=".">
+            <!-- <span class="omrs-input-label">Name</span> -->
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label for="" class="label-block">Company:</label>
+          <label class="omrs-input-underlined">
+            <input type="text" name="company" v-model="company" placeholder=".">
+            <!-- <span class="omrs-input-label company">Company</span> -->
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label class="label-block">
+            Issue description:
+            <!-- <span class="omrs-input-label usdot">Issue description</span> -->
+          </label>
+          <textarea class="textarea" type="text" name="issue" v-model="issue" required placeholder="."></textarea>
+        </div>
+        <label class="label-block"> Urgency level:</label>
+        <select v-model="urgency" type="text" name="urgency" required>
+          <option default>Low</option>
+          <option>Medium</option>
+          <option>Urgent</option>
+          <option>Critical</option>
+        </select>
+        <div class="omrs-input-group">
+          <label class="label-block">Attach screenshots or files:</label>
+          <input type="file" name="my_file" multiple>
+          <input type="submit" value="Attach">
+        </div>
+
+        <p class="text-info">Alternatively, you can send a support request to support@iqdispatch.us. Our technical team
+          will address
+          your
+          issue as soon as possible, including after hours and on Saturdays, excluding Sundays and holidays.
+        </p>
+        <!-- <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input type="text" name="phone" v-model="phone" required placeholder=".">
+            <span class="omrs-input-label">Phone</span>
+          </label>
+        </div>
+        <div class="omrs-input-group">
+          <label class="omrs-input-underlined">
+            <input type="email" name="email" v-model="email" required placeholder=".">
+            <span class="omrs-input-label">Email</span>
+          </label>
+        </div> -->
+        <div class="omrs-input-group">
+          <input type="submit" class="submit_btn schedule_btn" value="Submit Tech Support Ticket">
+        </div>
+        <div class="popup-container popup-inactive">
+          <div class="popup">
+            <div class="popup-text">✔️Your message had been sent.</div>
+            <button class="popup-ok" @click="togglePopup()">Close</button>
+          </div>
+        </div>
+      </form>
     </div>
+    <!-- <main-footer /> -->
   </div>
 </template>
 <script>
   /* eslint-disable */
   // import MainNavbar from './MainNavbar'
   // import MainFooter from './MainFooter'
-  // import VueSlickCarousel from 'vue-slick-carousel'
-  // import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-  // optional style for arrows & dots
-  // import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
-  /* eslint-disable */
+  import emailjs from 'emailjs-com';
   export default {
-    name: "about",
+    name: 'Contactpage',
     data() {
       return {
-        msg: "Welcome to Your Vue.js App",
-        cookie_hide: false,
-        isActive: 0
-      };
+        name: '',
+        company: '',
+        issue: '',
+        urgency: '',
+        my_file: ''
+      }
     },
     components: {
       // MainNavbar,
       // MainFooter,
-      // VueSlickCarousel
     },
     mounted() {
       let h1 = document.querySelector('#main-title');
       h1.innerHTML = 'TECH SUPPORT';
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
-      let text = document.querySelector('.home-invisible');
-      text.classList.remove('dnone_ohidden', 'blog-background');
       let head = document.querySelector('#app-header');
-      head.classList.remove('blog-background1', 'investors-background1', 'subscription-background');
-      head.classList.add('aboutus-background1', 'header394');
+      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
+      head.classList.add('blog-background1', 'header394');
+      let text = document.querySelector('.home-invisible');
+      text.classList.remove('dnone_ohidden', 'aboutus-background1');
+
+      // document.querySelector('#main-title').textContent = '';
     },
     watch: {
       '$route': 'repaint'
     },
     methods: {
+      sendEmail() {
+        try {
+          let company = document.querySelector('.company');
+          company.removeAttribute("required");
+          let usdot = document.querySelector('.usdot');
+          company.removeAttribute("required");
+          emailjs.sendForm('service_691neco', 'template_flyxfqo', this.$refs.form, 'kzje1mOzOaxKTx4la', {
+            name: this.name,
+            company: this.company,
+            issue: this.issue,
+            urgency: this.urgency,
+            my_file: this.my_file
+          });
+          this.togglePopup();
+
+        } catch (error) {
+          console.log({ error });
+        }
+        // Reset form field
+        this.name = ''
+        this.company = ''
+        this.issue = ''
+        this.urgency = ''
+        this.my_file = ''
+      },
       repaint() {
         let h1 = document.querySelector('#main-title');
-        h1.innerHTML = 'About';
+        h1.innerHTML = 'TECH SUPPORT';
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
-        let text = document.querySelector('.home-invisible');
-        text.classList.remove('dnone_ohidden', 'blog-background');
         let head = document.querySelector('#app-header');
-        head.classList.remove('blog-background1', 'investors-background1', 'subscription-background');
-        head.classList.add('aboutus-background1', 'header394');
-
+        head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
+        head.classList.add('blog-background1', 'header394');
+        let text = document.querySelector('.home-invisible');
+        text.classList.remove('dnone_ohidden');
+      },
+      togglePopup() {
+        let popup = document.querySelector('.popup-container');
+        popup.classList.toggle('popup-inactive');
       }
     }
-  };
+  }
 </script>
 <style scoped>
-  .blog {
-    background-color: #ECEEF2;
+  * {
+    transition: 0.3s;
   }
 
-  .container>h1 {
-    font-size: 48px;
-    font-weight: 900;
-    text-transform: uppercase;
-  }
-
-  p {
-    font-size: 18.5px;
-    line-height: 28px;
-    text-indent: 2em;
-  }
-
-  .blog-container {
-    max-width: 1440px;
-    padding: 40px 96px;
-    margin: 0 auto;
+  .contact_header {
+    background-image: #eceef2;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
+    width: 100%;
+    height: 100vh;
+    position: relative;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    text-align: left;
-    background-position-y: 56.6%;
+    justify-content: center;
+    align-items: flex-start;
   }
 
-  .card {
-    display: inline-block;
-    width: 387px;
-    height: 510px;
-    margin: 13px;
-    overflow: hidden;
-    background-color: #FFF;
-    box-shadow: 0 2px 6px #A7A7A7;
-  }
-
-  .card p:not(.grey-75) {
-    text-align: left;
-    padding: 9px 0;
-  }
-
-  .grey-50 {
-    color: #6C6C6C;
-  }
-
-  .grey-75 {
-    padding-top: 44px;
-    color: #A9ADAF;
+  .contact_header form {
+    width: 40%;
+    margin-top: 2%;
+    margin-left: 10%;
     text-align: left;
   }
 
-  .grey-75 * {
-    display: inline-block;
-    height: 20px;
-    line-height: 20px;
-    font-size: 14px;
+  .contact_header form>div.pc-number {
+    font-size: 25px;
+    line-height: 40px;
   }
 
-  .grey-75>span {
-    padding-left: 5px;
+  .contact_header form>div.mobile-number {
+    display: none;
   }
 
-  .text-block {
-    padding: 7px 18px;
+  .contact_header form>div>span {
+    font-weight: bold;
+    color: #b11720;
   }
 
-  .text-block p:first-child {
+
+  .popup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 999;
+  }
+
+  .popup {
+    max-width: 500px;
+    max-height: 500px;
+    background-color: #fff;
+    border: 1px solid #121212;
+    font-size: 24px;
+    padding: 2% 2%;
+    text-align: center;
+  }
+
+  .popup-ok {
+    height: 20%;
+    width: 30%;
     font-size: 18px;
-    font-weight: 600;
+    padding: 1% 3%;
   }
 
-  .card>a {
-    color: #160C3A;
+  .popup-container.popup-inactive {
+    display: none;
   }
 
-  @media(max-width: 1448px) {
-    .blog-container {
-      display: block;
+  .schedule_btn {
+    width: 316px;
+  }
+
+  .label-block {
+    display: flex;
+    margin-bottom: 6px;
+  }
+
+  .textarea {
+    width: 100%;
+    height: 10vh;
+  }
+
+  .text-info {
+    width: 80%;
+  }
+
+  /* .not-required {
+    font-size: 18px;
+    margin-top: 10px;
+  } */
+
+  @media only screen and (max-width: 1100px) {
+    .contact_header {
+      height: 100vh;
+      padding: 150px 0%;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .contact_header form>div {
       text-align: center;
     }
 
-    .card {
-      width: 310px;
+    .contact_header form {
+      width: 80%;
+      margin-left: 10%;
+      margin-right: 10%;
+      text-align: left;
     }
   }
 
-  @media(max-width: 1367px) {
-    .grey-75 {
-      padding-top: 30px;
-    }
-
-    .card {
-      width: 320px;
-    }
-  }
-
-  @media(max-width: 1025px) {
-    .blog-container {
-      padding: 15px;
-    }
-
-    .card {
-      display: block;
-      margin: 0 auto 36px auto;
-      width: 75%;
+  @media only screen and (max-width: 767px) {
+    .contact_header {
       height: auto;
+      padding: 150px 0%;
+      flex-direction: column;
+      display: flex;
+      justify-content: space-around;
     }
 
-    .grey-75 {
-      padding-top: 36px;
-    }
-  }
-
-  @media(max-width: 577px) {
-    .blog-container {
-      padding: 16px;
-    }
-
-    .home-invisible>.container {
-      padding: 14px;
-    }
-
-    .card {
+    .contact_header form>div.mobile-number {
       display: block;
-      margin: 0 0 36px 0;
-      width: 100%;
-      height: auto;
+      font-size: 22px;
+      line-height: 40px;
     }
 
-    .container.titles>#main-title {
+    .contact_header form>div.pc-number {
+      display: none;
+    }
+
+    .contact_header form>div>span {
       font-size: 24px;
-      width: 75%;
-      margin-top: 15%;
-    }
-
-    .header394 {
-      height: 220px;
+      font-weight: bold;
+      color: #b11720;
     }
   }
 </style>
