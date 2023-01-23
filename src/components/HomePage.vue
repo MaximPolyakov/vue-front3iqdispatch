@@ -22,8 +22,8 @@
                     <a class="schedule_btn">Free
                       Trial</a>
                   </router-link>
-                  <router-link to="/demo">
-                    <a class="schedule_btn">View Demo</a>
+                  <router-link to="/live-demo">
+                    <a class="schedule_btn">Request Live Demo</a>
                   </router-link>
                 </div>
               </div>
@@ -44,8 +44,8 @@
                     <a class="schedule_btn">Free
                       Trial</a>
                   </router-link>
-                  <router-link to="/demo">
-                    <a class="schedule_btn">View Demo</a>
+                  <router-link to="/live-demo">
+                    <a class="schedule_btn">Request Live Demo</a>
                   </router-link>
                 </div>
               </div>
@@ -65,8 +65,8 @@
                     <a class="schedule_btn">Free
                       Trial</a>
                   </router-link>
-                  <router-link to="/demo">
-                    <a class="schedule_btn">View Demo</a>
+                  <router-link to="/live-demo">
+                    <a class="schedule_btn">Request Live Demo</a>
                   </router-link>
                 </div>
               </div>

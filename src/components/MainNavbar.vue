@@ -25,7 +25,7 @@
           </li> -->
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/subscription" class="nav-link" :class="{'active': isSelected==9?true:false}" exact>
-              Subscription</router-link>
+              Subscriptions</router-link>
           </li>
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/contact_us" class="nav-link" :class="{'active': isSelected==5?true:false}" exact>Contacts
@@ -76,7 +76,7 @@
             </li> -->
             <li class="nav-item">
               <router-link to="/subscription" exact><a class="nav-link"
-                  :class="{'active': isSelected==4?true:false}">Subscription</a></router-link>
+                  :class="{'active': isSelected==4?true:false}">Subscriptions</a></router-link>
             </li>
             <li class="nav-item">
               <router-link to="/contact_us" exact><a class="nav-link"

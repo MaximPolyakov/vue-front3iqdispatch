@@ -79,7 +79,7 @@
     },
     mounted() {
       let h1 = document.querySelector('#main-title');
-      h1.innerHTML = 'CONTACTS';
+      h1.innerHTML = 'REQUEST LIVE DEMO';
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let head = document.querySelector('#app-header');
@@ -119,7 +119,7 @@
       },
       repaint() {
         let h1 = document.querySelector('#main-title');
-        h1.innerHTML = 'CONTACTS';
+        h1.innerHTML = 'REQUEST LIVE DEMO';
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
         let head = document.querySelector('#app-header');

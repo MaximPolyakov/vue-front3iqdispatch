@@ -224,10 +224,10 @@
         this.usersnumber = ''
         this.trucksnumber = ''
         this.starttrialdate = ''
-        this.demorequested = ''
+        // this.demorequested = ''
         this.demorequesteddate = ''
-        this.dataccount = ''
-        this.truckstopaccount = ''
+        // this.dataccount = ''
+        // this.truckstopaccount = ''
         this.trailertype = ''
       },
       repaint() {
@@ -259,7 +259,7 @@
     background-size: cover;
     background-position: left;
     width: 100%;
-    height: 100vh;
+    height: 210vh;
     position: relative;
     display: flex;
     justify-content: center;
@@ -267,7 +267,7 @@
   }
 
   .contact_header form {
-    width: 40%;
+    width: 50%;
     margin-top: 2%;
     margin-left: 10%;
     text-align: left;
@@ -339,6 +339,13 @@
 
   .text-info {
     width: 80%;
+    color: #003570;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  label {
+    font-size: 18px;
   }
 
   /* .not-required {
