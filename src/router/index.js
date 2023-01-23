@@ -18,7 +18,7 @@ import Article3 from '@/components/Article3'
 import Subscription1 from '@/components/Subscription1'
 import Demo from '@/components/Demo'
 import Support from '@/components/Support'
-
+import FreeTrial from '@/components/FreeTrial'
 
 /* eslint-disable */
 Vue.use(VueRouter)
@@ -122,6 +122,11 @@ export default new VueRouter({
       path: '/support',
       name: 'Support',
       component: Support
+    },
+    {
+      path: '/start-free-trial',
+      name: 'FreeTrial',
+      component: FreeTrial
     },
     ],
     scrollBehavior (to, from, savedPosition) {
