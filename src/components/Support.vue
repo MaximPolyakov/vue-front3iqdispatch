@@ -26,17 +26,19 @@
           </label>
           <textarea class="textarea" type="text" name="issue" v-model="issue" required placeholder="."></textarea>
         </div>
-        <label class="label-block"> Urgency level:</label>
+        <label class="label-block urgency"> Urgency level:</label>
         <select v-model="urgency" type="text" name="urgency" required>
-          <option default>Low</option>
+          <option>Low</option>
           <option>Medium</option>
           <option>Urgent</option>
           <option>Critical</option>
         </select>
         <div class="omrs-input-group">
           <label class="label-block">Attach screenshots or files:</label>
-          <input type="file" name="my_file" multiple>
-          <input type="submit" value="Attach">
+          <div class="attach-wrapper">
+            <input type="file" name="my_file" multiple>
+            <input type="submit" value="Attach" class="attach-button">
+          </div>
         </div>
 
         <p class="text-info">Alternatively, you can send a support request to support@iqdispatch.us. Our technical team
@@ -96,8 +98,8 @@
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let head = document.querySelector('#app-header');
-      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
-      head.classList.add('blog-background1', 'header394');
+      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background', 'blog-background1', 'freetrial-background');
+      head.classList.add('contacts-background', 'header394');
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden', 'aboutus-background1');
 
@@ -138,10 +140,10 @@
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
         let head = document.querySelector('#app-header');
-        head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
-        head.classList.add('blog-background1', 'header394');
+        head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background', 'blog-background1', 'freetrial-background');
+        head.classList.add('contacts-background', 'header394');
         let text = document.querySelector('.home-invisible');
-        text.classList.remove('dnone_ohidden');
+        text.classList.remove('dnone_ohidden', 'aboutus-background1');
       },
       togglePopup() {
         let popup = document.querySelector('.popup-container');
@@ -170,7 +172,7 @@
 
   .contact_header form {
     width: 40%;
-    margin-top: 2%;
+    margin-top: 1%;
     margin-left: 10%;
     text-align: left;
   }
@@ -241,6 +243,31 @@
 
   .text-info {
     width: 80%;
+    color: #003570;
+    font-size: 18px;
+  }
+
+  .attach-wrapper {
+    display: flex;
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+    border: #121212 1px solid;
+    margin-bottom: 20px;
+    /* position: relative; */
+  }
+
+  .attach-wrapper>input {
+    display: flex;
+  }
+
+  .attach-wrapper>.attach-button {
+    display: flex;
+    height: 50%;
+  }
+
+  .urgency {
+    margin-top: 18px;
   }
 
   /* .not-required {

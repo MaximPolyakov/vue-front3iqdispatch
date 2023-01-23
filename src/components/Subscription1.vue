@@ -44,7 +44,7 @@
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden', 'blog-background');
       let head = document.querySelector('#app-header');
-      head.classList.remove('blog-background1', 'investors-background1');
+      head.classList.remove('blog-background1', 'investors-background1', 'contacts-background', 'freetrial-background');
       head.classList.add('subscription-background', 'header394');
       const insertScript = document.createElement('script');
       insertScript.setAttribute('src', 'https://js.stripe.com/v3/pricing-table.js');
@@ -62,7 +62,7 @@
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden', 'blog-background');
         let head = document.querySelector('#app-header');
-        head.classList.remove('blog-background1', 'investors-background1');
+        head.classList.remove('blog-background1', 'investors-background1', 'freetrial-background');
         head.classList.add('subscription-background', 'header394');
         const insertScript = document.createElement('script');
         insertScript.setAttribute('src', 'https://js.stripe.com/v3/pricing-table.js');

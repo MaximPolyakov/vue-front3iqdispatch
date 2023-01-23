@@ -138,6 +138,20 @@
     background-position-y: 79.2%;
   }
 
+  .contacts-background {
+    background-image: url('assets/images/contact/bg_contact_slide_01_full.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 79.2%;
+  }
+
+  .freetrial-background {
+    background-image: url('assets/images/freetrial/freetrial-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 55.2%;
+  }
+
   .nav_fixed {
     position: fixed;
     left: 0;

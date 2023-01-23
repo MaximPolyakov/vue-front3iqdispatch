@@ -154,11 +154,11 @@
     </div>
     <div class="copyps">
       <p class="copyright">Terms & Conditions</p>
-      <p class="copyright">© Copyright PHD Logistics LLC 2022</p>
+      <p class="copyright">© Copyright PHD Logistics LLC 2023</p>
       <p class="copyright">Privacy Policy</p>
     </div>
     <div class="copyps mobile">
-      <p class="copyright">© Copyright PHD Logistics LLC 2022</p>
+      <p class="copyright">© Copyright PHD Logistics LLC 2023</p>
     </div>
   </div>
 </template>

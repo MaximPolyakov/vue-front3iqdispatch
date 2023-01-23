@@ -83,7 +83,7 @@
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let head = document.querySelector('#app-header');
-      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
+      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background', 'freetrial-background');
       head.classList.add('blog-background1', 'header394');
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden', 'aboutus-background1');
@@ -123,7 +123,7 @@
         let span = document.querySelector('#main-subtitle');
         span.innerHTML = '';
         let head = document.querySelector('#app-header');
-        head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
+        head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background', 'freetrial-background');
         head.classList.add('blog-background1', 'header394');
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden', 'aboutus-background1');
@@ -146,7 +146,7 @@
     background-size: cover;
     background-position: left;
     width: 100%;
-    height: 100vh;
+    height: 91vh;
     position: relative;
     display: flex;
     justify-content: center;

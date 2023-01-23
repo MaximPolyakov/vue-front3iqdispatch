@@ -176,8 +176,8 @@
       let span = document.querySelector('#main-subtitle');
       span.innerHTML = '';
       let head = document.querySelector('#app-header');
-      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
-      head.classList.add('blog-background1', 'header394');
+      head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background',);
+      head.classList.add('freetrial-background', 'header394');
       let text = document.querySelector('.home-invisible');
       text.classList.remove('dnone_ohidden', 'aboutus-background1');
 
@@ -237,7 +237,7 @@
         span.innerHTML = '';
         let head = document.querySelector('#app-header');
         head.classList.remove('aboutus-background1', 'investors-background1', 'subscription-background');
-        head.classList.add('blog-background1', 'header394');
+        head.classList.add('freetrial-background', 'header394');
         let text = document.querySelector('.home-invisible');
         text.classList.remove('dnone_ohidden');
       },
