@@ -17,9 +17,14 @@
                   Improve net profits by up to<br />$500-$1000+ per truck per
                   month
                 </h3>
-                <div>
-                  <a class="schedule_btn" href="https://demodesk.com/book/iq-dispatch-team/demo"
-                    target="_blank">Schedule a Demo</a>
+                <div class="c1_buttonts">
+                  <router-link to="/start-free-trial">
+                    <a class="schedule_btn">Free
+                      Trial</a>
+                  </router-link>
+                  <router-link to="/demo">
+                    <a class="schedule_btn">View Demo</a>
+                  </router-link>
                 </div>
               </div>
             </div>
@@ -31,10 +36,18 @@
                   loadboards.
                 </h1>
                 <h1>
-                  Optimized dispatcher workflows.
+                  Optimized dispatcher workflows. <br>
                   Book more trucks per dispatcher.
                 </h1>
-
+                <div class="c2_buttonts">
+                  <router-link to="/start-free-trial">
+                    <a class="schedule_btn">Free
+                      Trial</a>
+                  </router-link>
+                  <router-link to="/demo">
+                    <a class="schedule_btn">View Demo</a>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -47,6 +60,15 @@
                   With advanced load matching <span class="red">Alerts</span>
                   book loads before your competitors.
                 </h1>
+                <div class="c3_buttonts">
+                  <router-link to="/start-free-trial">
+                    <a class="schedule_btn">Free
+                      Trial</a>
+                  </router-link>
+                  <router-link to="/demo">
+                    <a class="schedule_btn">View Demo</a>
+                  </router-link>
+                </div>
               </div>
             </div>
           </div>
@@ -90,7 +112,7 @@
           infinite: false,
           speed: 300,
           autoplay: true,
-          autoplaySpeed: 4500,
+          autoplaySpeed: 5500,
           slidesToShow: 1,
           slidesToScroll: 1,
           arrows: true,
@@ -399,7 +421,8 @@
     height: 100%;
     position: relative;
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
   }
 
@@ -452,9 +475,20 @@
 
   .cols1 .c1_title {
     /* width: 750px; */
+    display: block;
+    /* flex-direction: column;
+    justify-content: flex-start; */
     width: 800px;
-    margin-left: 15%;
+    margin-left: -20%;
   }
+
+  .cols1 .c1_buttons router-link {
+    display: flex;
+    /* width: 40%; */
+    /* justify-content: space-between; */
+  }
+
+
 
   .cols1 .c1_title>h1 {
     margin: 0.5em 0;
@@ -476,19 +510,19 @@
   }
 
   .cols2>.c1_title {
-    margin-top: -20%;
-    margin-left: 20%;
-    margin-right: 20%;
-    width: 140%;
+    margin-top: 5%;
+    margin-left: 45%;
+    margin-right: 15%;
+    width: 90%;
     text-align: center;
   }
 
   .cols3>.c1_title {
     width: 40%;
     margin-right: 48%;
-    margin-top: -8%;
+    margin-top: -17%;
     /* padding-top: 130px; */
-    text-align: left;
+    text-align: center;
   }
 
 
