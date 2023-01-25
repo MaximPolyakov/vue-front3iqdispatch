@@ -163,7 +163,7 @@
     background-size: cover;
     background-position: left;
     width: 100%;
-    height: 100vh;
+    height: 98vh;
     position: relative;
     display: flex;
     justify-content: center;
