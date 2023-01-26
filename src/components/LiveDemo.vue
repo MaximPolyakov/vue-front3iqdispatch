@@ -94,17 +94,17 @@
     methods: {
       sendEmail() {
         try {
-          // let company = document.querySelector('.company');
-          // company.removeAttribute("required");
-          // let usdot = document.querySelector('.usdot');
-          // company.removeAttribute("required");
-          // emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', this.$refs.form, 'kzje1mOzOaxKTx4la', {
-          //   name: this.name,
-          //   company: this.company,
-          //   usdot: this.usdot,
-          //   phone: this.phone,
-          //   email: this.email
-          // });
+          let company = document.querySelector('.company');
+          company.removeAttribute("required");
+          let usdot = document.querySelector('.usdot');
+          company.removeAttribute("required");
+          emailjs.sendForm('service_ohze1k6', 'template_7mjreo7', this.$refs.form, 'kzje1mOzOaxKTx4la', {
+            name: this.name,
+            company: this.company,
+            usdot: this.usdot,
+            phone: this.phone,
+            email: this.email
+          });
           this.togglePopup();
 
         } catch (error) {
