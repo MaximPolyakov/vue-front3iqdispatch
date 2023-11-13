@@ -8,7 +8,7 @@
           <div class="col">
             <div class="cols1">
               <div class="c1_title">
-                <h1>Load <span class="red">Finder</span> & <span class="red">Analytics</span> Tools
+                <h1>Dispatcher Load <span class="red">Analytics Tool</span>
                 </h1>
                 <h1>
                   Designed to increase load profitability <br> and to improve dispatcher productivity
@@ -32,7 +32,7 @@
           <div class="col">
             <div class="cols2">
               <div class="c1_title">
-                <h1>Consolidated <span class="red">DAT</span> and <span class="red">Truckstop</span>
+                <h1>Integrated with <span class="red">DAT</span> and <span class="red">Truckstop</span>
                   loadboards.
                 </h1>
                 <h1>

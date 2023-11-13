@@ -11,10 +11,10 @@
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/" class="nav-link" :class="{'active': isSelected==1?true:false}" exact>Home</router-link>
           </li>
-          <li class="nav-item" @click="mobileNavShow = false">
+          <!-- <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/demo" class="nav-link" :class="{'active': isSelected==4?true:false}" exact>Demo
             </router-link>
-          </li>
+          </li> -->
           <li class="nav-item" @click="mobileNavShow = false">
             <router-link to="/blogpage" class="nav-link" :class="{'active': isSelected==3?true:false}" exact>Blog
             </router-link>
@@ -55,11 +55,11 @@
               <router-link to="/" exact><a class="nav-link" :class="{'active': isSelected==1?true:false}">Home</a>
               </router-link>
             </li>
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link to="/demo" exact>
                 <a class="nav-link" :class="{'active': isSelected==1?true:false}"> Demo</a>
               </router-link>
-            </li>
+            </li> -->
             <!-- <li class="nav-item">
               <router-link to="/featurepage"><a class="nav-link" :class="{'active': isSelected==2?true:false}">Features</a></router-link>
             </li> -->
