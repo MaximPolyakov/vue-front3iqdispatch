@@ -8,7 +8,7 @@
           <div class="col">
             <div class="cols1">
               <div class="c1_title">
-                <h1>Dispatcher Load <span class="red">Analytics Tool</span>
+                <h1>Dispatcher <span class="red">Load Analytics </span> Tool
                 </h1>
                 <h1>
                   Designed to increase load profitability <br> and to improve dispatcher productivity
