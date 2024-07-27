@@ -8,7 +8,7 @@
             <img src="../assets/images/footer/logo_iqdispatch_03.png" class="footer_white_logo_disp" />
             <p class="footer-desc">Load finder, load profitability estimator, HOS <br> compliant trip planing, route
               analysis, integrated <br> mapping, dispatcher performance benchmarking, <br> and much more</p>
-            <p class="footer-desc">PHD Logistics LLC, 332 S Michigan Ave Suite 121-5500, Chicago, IL 60604</p>
+            <p class="footer-desc">IQ DISPATCH INC, 7643 GATE PARKWAY SUITE 104-699, JACKSONVILLE, FL, 32256</p>
           </div>
         </div>
       </div>
@@ -154,11 +154,11 @@
     </div>
     <div class="copyps">
       <p class="copyright">Terms & Conditions</p>
-      <p class="copyright">© Copyright PHD Logistics LLC 2023</p>
+      <p class="copyright">© Copyright IQ DISPATCH INC 2024</p>
       <p class="copyright">Privacy Policy</p>
     </div>
     <div class="copyps mobile">
-      <p class="copyright">© Copyright PHD Logistics LLC 2023</p>
+      <p class="copyright">© Copyright IQ DISPATCH INC 2024</p>
     </div>
   </div>
 </template>

@@ -9,7 +9,7 @@
           complete the form below and a IQDispatch
           representative will be in touch with you shortly.</div>
         <div class="mobile-number">Sales business hours 8AM-5PM CST Monday-Friday Contact us directly at <br> <span>
-            (312) 340-5457</span> or
+            (608) 400-6112</span> or
           complete the form below and a IQDispatch
           representative will be in touch with you shortly.</div>
         <div class="omrs-input-group">
